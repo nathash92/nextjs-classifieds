@@ -21,7 +21,7 @@ function Page() {
           </div>
         </div>
 
-        <section className="bg-gray-50 px-6 py-12">
+        <section className="bg-white px-6 py-12">
           <div className="mb-5 container mx-auto">
             <div className="text-3xl font-bold text-center mb-5">How it works?</div>
             <div className="flex justify-between">

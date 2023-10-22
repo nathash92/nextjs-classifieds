@@ -4,7 +4,7 @@ import React from 'react'
 
 function Header() {
   return (
-    <div className="navbar border-b-orange-400 border-b-2 bg-white sticky z-10 top-0">
+    <div className="navbar border-b-orange-400 border-b-4 bg-white sticky z-10 top-0">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -28,9 +28,14 @@ function Header() {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li><a>Home</a></li>
+          <li>
+            <Link href="/">
+              Home
+            </Link>
+          </li>
           <li><Link href="/about-us">About Us</Link></li>
           <li><a>Contact</a></li>
+          <li><Link href="/auth/login">Login</Link></li>
         </ul>
       </div>
       <div className="navbar-end">

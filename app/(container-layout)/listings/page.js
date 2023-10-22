@@ -1,5 +1,5 @@
+import ListingCard from "@/shared/components/listing-cards/ListingCard"
 import PageInfo from "@/shared/components/PageInfo"
-import Image from "next/image"
 
 function Page() {
   return (
@@ -64,27 +64,7 @@ function Page() {
 
           <div className="grid grid-cols-3 gap-4">
             {
-              [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map(x => <div className="card bg-base-100 shadow-md" key={x}>
-                <figure>
-                  <Image src="/imgs/sample.jpg" width="400" height="120" alt="img" />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">
-                    Rs.5000 /sqft
-                    <div className="badge badge-secondary text-sm">NEW</div>
-                  </h2>
-                  <p className="text-base">
-                    Kengeri Mysore Road, BDA complex
-                  </p>
-                  <p className="text-gray-400 text-sm">
-                    Posted on: 10 Oct 2024
-                  </p>
-                  {/* <div className="card-actions justify-end">
-                    <div className="badge badge-outline">Fashion</div>
-                    <div className="badge badge-outline">Products</div>
-                  </div> */}
-                </div>
-              </div>)
+              [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map(x => <ListingCard key={x} />)
             }
           </div>
 
